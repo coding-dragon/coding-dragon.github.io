@@ -11,6 +11,13 @@
   background-color: #d61e1e;
   color: #fff;
 }
+.btn-code {
+  background-color: #6b6868;
+  color: #fff;
+}
+.btn-yt:hover, .btn-code:hover {
+  color: #fff;
+}
 
 @media (min-width: 768px) {
   .jumbotron {
