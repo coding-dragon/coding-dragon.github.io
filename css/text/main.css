@@ -1,5 +1,5 @@
 .bg-dark {
-    background-color: #1f2138!important;
+    background-color: #1f3038!important;
 }
 .jumbotron {
   padding-top: 3rem;
@@ -7,6 +7,11 @@
   margin-bottom: 0;
   background-color: #fff6e3!important;
 }
+.btn-yt {
+  background-color: #d61e1e;
+  color: #fff;
+}
+
 @media (min-width: 768px) {
   .jumbotron {
     padding-top: 6rem;
