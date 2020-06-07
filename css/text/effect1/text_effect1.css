@@ -1,0 +1,48 @@
+body {
+    background: #ff3377;
+}
+
+div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: sans-serif;
+}
+
+h1 {
+    margin: 0;
+    font-size: 15rem;
+    font-weight: 800;
+    letter-spacing: 15px;
+    color: #ffc617;
+    text-shadow: -4px -1px 0px #fff,
+                 -8px -1px 0px #6600ff,
+                 -12px -1px 0px #fff,
+                 -16px -1px 0px #6600ff,
+                 -20px -1px 0px #fff,
+                 -24px -1px 0px #6600ff,
+                 -28px -1px 0px #fff,
+                 -32px -1px 0px #6600ff;
+}
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 10rem;
+        text-shadow: -2px -1px 0px #fff,
+                    -4px -1px 0px #6600ff,
+                    -6px -1px 0px #fff,
+                    -8px -1px 0px #6600ff,
+                    -10px -1px 0px #fff,
+                    -12px -1px 0px #6600ff,
+                    -14px -1px 0px #fff,
+                    -16px -1px 0px #6600ff;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 6rem;
+    }
+}
