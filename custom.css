@@ -37,6 +37,24 @@ a, a:active {
   color: #fff;
 }
 
+/* footer */
+footer .links {
+    display: flex;
+}
+footer .links a {
+    padding: 40px;
+    flex-basis: 100%;
+    text-align: center;
+    font-family: "cubanoregular";
+    letter-spacing: .4px;
+    text-decoration: none;
+    color: #FFF;
+    margin: 0;
+}
+footer .links a.shiffman-net {
+    background: #1E7EA4;
+}
+
 /* media */
 @media (max-width: 500px) {
     .display-4 {
