@@ -67,7 +67,7 @@ footer .links a span {
     transform: scale(1);
 }
 footer .links a:hover span {
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 /* media */
