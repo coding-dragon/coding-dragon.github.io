@@ -23,3 +23,11 @@ a, a:active {
     background: #3F51B5;
 } 
 
+
+
+/* media */
+@media (max-width: 500px) {
+    .display-4 {
+        font-size: 2rem;
+    }
+}
