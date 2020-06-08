@@ -13,6 +13,9 @@ a, a:active {
     color: #35B8BE;
     text-decoration: none;
 }
+.header-box {
+    background: #3F51B5;
+} 
 
 .footer-end {
     display: flex;
