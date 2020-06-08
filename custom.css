@@ -50,14 +50,14 @@ footer .links a {
     color: #FFF;
     margin: 0;
 }
-footer .links a.shiffman-net {
-    background: #1E7EA4;
+footer .links a.visit-website {
+    background: #7aa7bd;
 }
-footer .links a.nature-of-code {
+footer .links a.youtube-follow {
     background: #E51310;
 }
-footer .links a.learning-processing {
-    background: #F1C500;
+footer .links a.reach-to-us {
+    background: #8b00c1;
     color: #222;
 }
 footer .links a span {
