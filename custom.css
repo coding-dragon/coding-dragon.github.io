@@ -37,45 +37,10 @@ a, a:active {
   color: #fff;
 }
 
-/* footer */
-footer .links {
-    display: flex;
-}
-footer .links a {
-    padding: 40px;
-    flex-basis: 100%;
-    text-align: center;
-    letter-spacing: .4px;
-    text-decoration: none;
-    color: #FFF;
-    margin: 0;
-}
-footer .links a.visit-website {
-    background: #7aa7bd;
-}
-footer .links a.youtube-follow {
-    background: #E51310;
-}
-footer .links a.reach-to-us {
-    background: #8b00c1;
-    color: #222;
-}
-footer .links a span {
-    display: inline-block;
-    font-size: 18px;
-    transition: all 150ms cubic-bezier(.4, 0, .2, 1);
-    transform: scale(1);
-}
-footer .links a:hover span {
-    transform: scale(1.2);
-}
 
 /* media */
 @media (max-width: 500px) {
     .display-4 {
         font-size: 2rem;
-    }
-    footer .links {
-        flex-direction: column;
     }
 }
