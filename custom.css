@@ -4,3 +4,8 @@
 .sticky-top {
     background: #fff;
 }
+
+.footer-end {
+    display: flex;
+    justify-content: flex-end;
+}
