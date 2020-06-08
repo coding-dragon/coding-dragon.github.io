@@ -4,6 +4,9 @@ a, a:active {
 .font-weight-normal {
     font-weight: 600!important;
 }
+.card {
+    box-shadow: 0 10px 20px #eee, 0 6px 6px #d5d5d5;
+}
 
 /* header */
 .sticky-top {
