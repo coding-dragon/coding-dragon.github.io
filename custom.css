@@ -23,7 +23,15 @@ a, a:active {
     background: #3F51B5;
 } 
 
-
+/* content */
+.btn-yt {
+  background-color: #d61e1e;
+  color: #fff;
+}
+.btn-code {
+  background-color: #6b6868;
+  color: #fff;
+}
 
 /* media */
 @media (max-width: 500px) {
