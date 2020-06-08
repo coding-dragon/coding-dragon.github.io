@@ -33,6 +33,9 @@ a, a:active {
   background-color: #6b6868;
   color: #fff;
 }
+.btn-yt:hover, .btn-code:hover {
+  color: #fff;
+}
 
 /* media */
 @media (max-width: 500px) {
