@@ -20,7 +20,3 @@ a, a:active {
     background: #3F51B5;
 } 
 
-.footer-end {
-    display: flex;
-    justify-content: flex-end;
-}
