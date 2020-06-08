@@ -7,6 +7,9 @@ a, a:active {
 .card {
     box-shadow: 0 10px 20px #eee, 0 6px 6px #d5d5d5;
 }
+.display-4 {
+    font-size: 3rem;
+}
 
 /* header */
 .sticky-top {
