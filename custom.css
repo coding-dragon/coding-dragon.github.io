@@ -54,6 +54,19 @@ footer .links a {
 footer .links a.shiffman-net {
     background: #1E7EA4;
 }
+footer .links a.nature-of-code {
+    background: #E51310;
+}
+footer .links a.learning-processing {
+    background: #F1C500;
+    color: #222;
+}
+footer .links a span {
+    display: inline-block;
+    font-size: 18px;
+    transition: all 150ms cubic-bezier(.4, 0, .2, 1);
+    transform: scale(1);
+}
 
 /* media */
 @media (max-width: 500px) {
