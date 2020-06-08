@@ -45,7 +45,6 @@ footer .links a {
     padding: 40px;
     flex-basis: 100%;
     text-align: center;
-    font-family: "cubanoregular";
     letter-spacing: .4px;
     text-decoration: none;
     color: #FFF;
@@ -67,10 +66,16 @@ footer .links a span {
     transition: all 150ms cubic-bezier(.4, 0, .2, 1);
     transform: scale(1);
 }
+footer .links a:hover span {
+    transform: scale(1.5);
+}
 
 /* media */
 @media (max-width: 500px) {
     .display-4 {
         font-size: 2rem;
+    }
+    footer .links {
+        flex-direction: column;
     }
 }
