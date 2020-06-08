@@ -1,8 +1,16 @@
-
+a, a:active {
+    text-decoration: none;
+}
 
 /* header */
 .sticky-top {
     background: #fff;
+}
+.header-link {
+    color: #122A9A;
+}
+.header-link:hover {
+    color: #35B8BE;
 }
 
 .footer-end {
