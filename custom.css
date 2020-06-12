@@ -10,6 +10,9 @@ a, a:active {
 .display-4 {
     font-size: 3rem;
 }
+.text-muted {
+    color: #a6add0!important;
+}
 
 /* header */
 .sticky-top {
