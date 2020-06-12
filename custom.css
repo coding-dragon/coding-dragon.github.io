@@ -60,7 +60,7 @@ a, a:active {
 #myBtnContainer > .btn:hover {
   background-color: #ddd;
 }
-#myBtnContainer > .btn:active {
+#myBtnContainer > .btn.active {
   background-color: #666;
 }
 
