@@ -28,9 +28,9 @@
     </nav>
 
     <div class="position-relative overflow-hidden p-3 text-white header-box">
-      <div class="col-md-6 p-lg-3 ml-md-5 my-3">
+      <div class="col-md-6 p-lg-5 ml-md-5 my-3">
         <h1 class="display-4 font-weight-normal">CSS Text</h1>
-        <p class="text-muted">Challenge yourself and become a CSS expert. Be creative, submit your result and check out what others have created.
+        <p class="text-muted" style="font-size:1.2rem!important">Challenge yourself and become a CSS expert. Be creative, submit your result and check out what others have created.
          <br/><br/>Improve your front-end skills by challenging  yourself with real projects.</p>
       </div>
     </div>
@@ -38,7 +38,16 @@
     <div class="py-5">
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-12">
+            <div id="myBtnContainer">
+              <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+              <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+              <button class="btn" onclick="filterSelection('animals')"> Animals</button>
+              <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
+              <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+            </div>
+        </div>
+        <div class="col-md-4 filterDiv cars ">
           <div class="card mb-4">
             <a href="https://coding-dragon.github.io/css/text/effect2" target="_blank">
               <img class="bd-placeholder-img card-img-top" src="https://coding-dragon.github.io/css/text/effect2/effect2.png" width="100%" height="200" />
@@ -55,7 +64,7 @@
           </div>
         </div>
         
-        <div class="col-md-4">
+        <div class="col-md-4 filterDiv colors">
           <div class="card mb-4">
             <a href="https://coding-dragon.github.io/css/text/effect1" target="_blank">
               <img class="bd-placeholder-img card-img-top" src="https://coding-dragon.github.io/css/text/effect1/effect1.png" width="100%" height="200" />
@@ -90,7 +99,50 @@
         </p>
       </div>
     </footer>
-    
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>    
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script>window.jQuery || document.write('<script src="https://getbootstrap.com/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="https://getbootstrap.com/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script></body>
 </html>
