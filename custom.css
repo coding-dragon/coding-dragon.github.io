@@ -43,6 +43,13 @@ a, a:active {
   color: #fff;
 }
 
+.filterDiv {
+  display: none;
+}
+
+.show {
+  display: block;
+}
 
 /* media */
 @media (max-width: 500px) {
