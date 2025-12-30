@@ -1,85 +1,241 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Coding Dragons</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="https://getbootstrap.com/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Coding Dragon - Portfolio</title>
+  <link rel="stylesheet" href="custom.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
 
-    <!-- Favicons -->
-    <link rel="icon" href="https://coding-dragon.github.io/img/logo.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="https://coding-dragon.github.io/img/logo.png" sizes="16x16" type="image/png">
-    <link rel="icon" href="https://coding-dragon.github.io/img/logo.png">
-
-    <!-- Custom styles for this template -->
-    <link href="custom.css" rel="stylesheet">
-  </head>
-    
-  <body>
-    <nav class="site-header sticky-top py-1">
-      <div class="container d-flex flex-md-row justify-content-between align-items-center">
-        <a href="https://coding-dragon.github.io/" aria-label="Product">
-            <img src="https://coding-dragon.github.io/img/logo.png" width="60" height="60" alt="coding-dragon-logo">
-        </a>
-        <a class="d-md-inline-block header-link" href="https://www.codingdragons.com/account/your-courses">Login</a>
-      </div>
-    </nav>
-
-    <div class="position-relative overflow-hidden p-3 text-white header-box">
-      <div class="col-md-6 p-lg-5 ml-md-5 my-3">
-        <h1 class="display-4 font-weight-normal">Make Your Learning Interesting & Fun.</h1>
-        <a class="btn btn-outline-light mt-3" href="#tutorials">Watch Tutorials</a>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar sticky-top">
+    <div class="nav-container">
+      <a href="#" class="logo">Coding Dragons</a>
+      <ul class="nav-menu">
+        <li><a href="#home" class="header-link">Home</a></li>
+        <li><a href="#about" class="header-link">About</a></li>
+        <li><a href="#skills" class="header-link">Skills</a></li>
+        <li><a href="#projects" class="header-link">Projects</a></li>
+        <li><a href="#contact" class="header-link">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
-    
-    <div class="py-5">
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1 class="hero-greeting">Hello!</h1>
+      <div class="hero-intro">
+        <p>We're <strong>Coding Dragons</strong>, a vibrant community of learners and mentors who guide each other through exciting machine learning projects and programming adventures.</p>
+        <p>We believe in learning by doing - building real projects, sharing knowledge, and growing together as a community of passionate developers.</p>
+      </div>
+      <div class="hero-contact">
+        <a href="#about" class="contact-link"><i class="fas fa-users"></i> Join Our Community</a>
+        <a href="#projects" class="contact-link"><i class="fas fa-rocket"></i> Explore Projects</a>
+        <a href="https://github.com/coding-dragon" class="contact-link"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+    </div>
+    <div class="hero-illustration">
+      <div class="animation-background">
+        <!-- Fire/flame particles -->
+        <div class="flame flame-1">🔥</div>
+        <div class="flame flame-2">🔥</div>
+        <div class="flame flame-3">🔥</div>
+        <!-- Code symbols -->
+        <div class="code-symbol code-1">&lt;/&gt;</div>
+        <div class="code-symbol code-2">{ }</div>
+        <div class="code-symbol code-3">( )</div>
+        <div class="code-symbol code-4">[ ]</div>
+        <!-- Stars/sparkles -->
+        <div class="sparkle sparkle-1">✨</div>
+        <div class="sparkle sparkle-2">⭐</div>
+        <div class="sparkle sparkle-3">✨</div>
+        <div class="sparkle sparkle-4">💫</div>
+        <!-- Dragon scales pattern -->
+        <div class="scale scale-1"></div>
+        <div class="scale scale-2"></div>
+        <div class="scale scale-3"></div>
+        <div class="scale scale-4"></div>
+      </div>
+      <img src="img/coding-dragon.png" alt="Coding Dragon" class="dragon-illustration">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
     <div class="container">
-      <div class="row">
-        <div class="col-12 text-center my-3">
-          <div class="detail-wrapper" id="tutorials">
-            <h3>Latest Tutorials</h3>
+      <h2 class="section-title">Our Mission</h2>
+      <div class="mission-content">
+        <p class="mission-text">Coding Dragons is a supportive learning community where developers of all skill levels come together to learn, build, and grow through guided projects and collaborative coding.</p>
+      </div>
+      
+      <h2 class="section-title">What We Offer</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-year"><i class="fas fa-project-diagram"></i></div>
+          <div class="timeline-content">
+            <h3>Guided Learning Projects</h3>
+            <p class="company">Hands-on Experience</p>
+            <p>Work on real-world projects with step-by-step guidance from experienced mentors. Build your portfolio while learning.</p>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card mb-4">
-            <a href="https://coding-dragon.github.io/css/text/effect1" target="_blank">
-              <img class="bd-placeholder-img card-img-top" src="https://coding-dragon.github.io/css/text/effect1/effect1.png" width="100%" height="200" />
-            </a>
-            <div class="card-body">
-              <h3>CSS Text Effect 1</h3>
-              <small class="text-muted">June 7, 2020</small>
-              <p class="card-text">This is a wider card with supporting natural lead-in to additional content.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a class="btn btn-sm btn-yt" href="https://www.youtube.com/watch?v=fqsG1O3T2fI" target="_blank">Watch Tutorial</a>
-                  <a class="btn btn-sm btn-code" href="https://github.com/coding-dragon/coding-dragon.github.io/tree/master/css/text/effect1" target="_blank">View Code</a>
-                </div>
+        <div class="timeline-item">
+          <div class="timeline-year"><i class="fas fa-users"></i></div>
+          <div class="timeline-content">
+            <h3>Community Support</h3>
+            <p class="company">Learn Together</p>
+            <p>Connect with fellow learners, share progress, ask questions, and celebrate wins together in our friendly community.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year"><i class="fas fa-chalkboard-teacher"></i></div>
+          <div class="timeline-content">
+            <h3>Mentorship Program</h3>
+            <p class="company">Expert Guidance</p>
+            <p>Get paired with experienced developers who provide code reviews, career advice, and technical support.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year"><i class="fas fa-graduation-cap"></i></div>
+          <div class="timeline-content">
+            <h3>Learning Paths</h3>
+            <p class="company">Structured Curriculum</p>
+            <p>Follow curated learning paths from beginner to advanced, covering web development, design, and programming.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">Learning Tracks</h2>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <i class="fab fa-html5"></i>
+          <span>HTML & CSS Fundamentals</span>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-js"></i>
+          <span>JavaScript & Web APIs</span>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-react"></i>
+          <span>React & Modern Frameworks</span>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-node"></i>
+          <span>Backend with Node.js</span>
+        </div>
+        <div class="skill-item">
+          <i class="fas fa-database"></i>
+          <span>Database Design</span>
+        </div>
+        <div class="skill-item">
+          <i class="fas fa-mobile-alt"></i>
+          <span>Responsive Design</span>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-git-alt"></i>
+          <span>Git & Version Control</span>
+        </div>
+        <div class="skill-item">
+          <i class="fas fa-rocket"></i>
+          <span>Deployment & DevOps</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Learning Projects</h2>
+      <p class="projects-intro">Explore our collection of guided projects designed to help you learn by building real applications.</p>
+      <div id="myBtnContainer" class="filter-buttons">
+        <button class="btn active" onclick="filterSelection('all')">All</button>
+        <button class="btn" onclick="filterSelection('programming')">Programming</button>
+        <button class="btn" onclick="filterSelection('machinelearning')">Machine Learning</button>
+      </div>
+      <div class="projects-grid">
+        <div class="card filterDiv programming">
+          <div class="card-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1557821552-17105176677c?w=600&q=80'); background-size: cover; background-position: center;">
+            <div class="card-rating">
+              <div class="score-circle">
+                <span class="score">9.2</span>
+                <span class="score-label">rating</span>
               </div>
             </div>
           </div>
+          <div class="card-content">
+            <h3>Python</h3>
+            <div class="card-meta">
+              <span class="badge">PROGRAMMING</span>
+              <span>2025</span>
+            </div>
+            <p class="text-muted">asdf</p>
+            <div class="card-buttons">
+              <a href="#" class="btn btn-play"><i class="fas fa-play"></i> View Playlist</a>
+              <a href="#" class="btn btn-outline"><i class="fab fa-github"></i> Code</a>
+            </div>
+          </div>
         </div>
-      
       </div>
     </div>
-    </div>
-    
-    <footer class="container py-3">
-      <div>
-        <p>
-          <span>Made with </span>
-          <svg preserveAspectRatio="xMidYMid meet" id="comp-k7nnri7ssvgcontent" data-bbox="20 29.647 159.999 144.707" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="20 29.647 159.999 144.707" data-type="color" role="img">
-          <g>
-          <path fill="#E91E63" d="M138.196 29.647c-17.427 0-32.309 10.857-38.277 26.173-5.969-15.315-20.85-26.173-38.277-26.173-22.687 0-45.544 18.737-41.078 50.951 5.135 37.04 79.355 93.756 79.355 93.756s72.587-54.849 79.355-93.756c5.191-29.84-18.391-50.951-41.078-50.951zm28.008 51.581c-3.034 16.571-23.573 38.628-23.573 38.628-4 4.172-6 1.634-2.732-3.268 3.268-4.901 13.161-20.397 15.087-30.925 2.349-12.837-.452-21.939-2.552-25.44-2.101-3.501-2.801-7.002-.233-8.869 2.567-1.867 6.068-.467 7.469 1.4 1.399 1.866 9.568 11.902 6.534 28.474z" data-color="1"></path>
-          </g>
-          </svg>
-          <span> © codingdragons</span>
-        </p>
-      </div>
-    </footer>
-    
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="https://getbootstrap.com/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="https://getbootstrap.com/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script></body>
-</html>
+  </section>
 
+  <!-- Community Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Join Our Community</h2>
+      <div class="community-content">
+        <p class="community-description">Connect with fellow learners, share your progress, and grow together as we build amazing projects!</p>
+        <div class="social-links-large">
+          <a href="#" class="social-card">
+            <i class="fab fa-instagram"></i>
+            <h3>Instagram</h3>
+            <p>Join our post community</p>
+          </a>
+          <a href="https://github.com/coding-dragon" class="social-card">
+            <i class="fab fa-github"></i>
+            <h3>GitHub</h3>
+            <p>Explore project repos</p>
+          </a>
+          <a href="https://www.youtube.com/channel/UCTCjWherlLPoXF6-rUOO_Xw" class="social-card">
+            <i class="fab fa-youtube"></i>
+            <h3>YouTube</h3>
+            <p>Watch video tutorials</p>
+          </a>
+          <a href="#" class="social-card">
+            <i class="fas fa-book"></i>
+            <h3>Resources</h3>
+            <p>Access learning materials</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Coding Dragon. All rights reserved.</p>
+      <p>Built with <i class="fas fa-heart"></i> and <i class="fas fa-code"></i></p>
+    </div>
+  </footer>
+
+  <script src="js/customfilter.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
